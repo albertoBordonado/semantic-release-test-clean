@@ -10,3 +10,9 @@
 - Create release.config.js
 
 - Create or update CI (develop branch)
+
+- Activate hooks of husky
+  -- yarn husky install
+
+- Add a hoo of husky
+  -- npx husky add .husky/commit-msg 'npx --no -- commitlint --edit ${1}'
