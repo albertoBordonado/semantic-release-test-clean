@@ -27,10 +27,18 @@ module.exports = {
     
     preset: 'angular',
     releaseRules: [
-      { type: 'breaking', release: 'major' },
+      { breaking: true, release: 'major' },
+      { type: 'build', release: 'none' },
+      { type: 'chore', release: 'none' },
+      { type: 'ci', release: 'none' },
+      { type: 'docs', release: 'none' },
       { type: 'feat', release: 'minor' },
       { type: 'fix', release: 'patch' },
-      // ...
+      { type: 'perf', release: 'patch' },
+      { type: 'refactor', release: 'none' },
+      { type: 'revert', release: 'patch' },
+      { type: 'style', release: 'none' },
+      { type: 'test', release: 'none' },
     ]
   };
   
