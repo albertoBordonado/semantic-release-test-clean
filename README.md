@@ -7,4 +7,6 @@
 
 - Create commitlint.config.js
 
+- Create release.config.js
+
 - Create or update CI (develop branch)
